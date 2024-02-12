@@ -1,9 +1,9 @@
-Data Upload Module
+## Data Upload Module
 
 will handle the upload of images and their associated label or class data, allowing users to manage their datasets effectively.
 
 
-1. Create a Project
+### 1. Create a Project
 
 Endpoint: /api/projects
 Method: POST
@@ -24,7 +24,7 @@ Response:
 }
 ```
 
-2. Upload Images
+### 2. Upload Images
 
 Endpoint: /api/projects/{MLForImages}/images
 Method: POST
@@ -42,7 +42,7 @@ Response:
 }
 ```
 
-3. Upload Label/Class Data
+### 3. Upload Label/Class Data
 
 Endpoint: /api/projects/{MLForImages}/labels
 Method: POST
@@ -66,11 +66,11 @@ Response:
 ```
 
 
-Training Module
+## Training Module
 
 will cover the configuration, initiation, and monitoring of the training process, including the management of training parameters and results.
 
-1. Analyze Data Before Training
+### 1. Analyze Data Before Training
 
 Endpoint: /api/projects/{MLForImages}/data/analyze
 Method: GET
@@ -87,7 +87,7 @@ Response:
   }
 }
 ```
-2. Configure Training Parameters
+### 2. Configure Training Parameters
 
 Endpoint: /api/projects/{MLForImages}/training/configure
 Method: POST
@@ -112,7 +112,7 @@ Response:
 }
 ```
 
-3. Start Training
+### 3. Start Training
 
 Endpoint: /api/projects/{MLForImages}/training/start
 Method: POST
@@ -125,7 +125,7 @@ Response:
 }
 ```
 
-4. Get Training Stats
+### 4. Get Training Stats
 
 Endpoint: /api/projects/{MLForImages}/training/{MLForImages}/stats
 Method: GET
